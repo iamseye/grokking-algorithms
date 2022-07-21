@@ -53,15 +53,11 @@ greet("maggie");
 ```
 
 - First, the computer allocates memory for `greet` function. Then it prints `“hello maggie”`
-    
-    ![Untitled](Chapter%203%20-%20Recursion%205371a1463e874c4796e9fe9bf4c27502/Untitled.png)
-    
+        
 - Second, it allocates memory for `greet2` function. Then it prints `"how are you maggie"`
     - At this stage, `greet` function is partially completed. When you call a function from another function, the calling function is paused in a partially completed state.
     - All the values of the variables for that function are still stored in memory.
-    
-    ![Untitled](Chapter%203%20-%20Recursion%205371a1463e874c4796e9fe9bf4c27502/Untitled%201.png)
-    
+        
 - Now that you’re done with `greet2` function, you’re back to the `greet` function, and you pick off where you left off. It prints `"getting ready to say bye"` then calls `bye` function.
 
 ### The call stack with recursion
